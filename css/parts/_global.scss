@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-style: normal;
+  overflow: hidden;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #25272D;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+input,
+textarea,
+a,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}

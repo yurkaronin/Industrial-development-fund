@@ -1,0 +1,14 @@
+@import "parts/fonts";
+
+// support
+@import "support/list-reset";
+@import "support/visually-hidden";
+
+// blocks
+@import "parts/variables";
+@import "parts/global";
+
+// sections
+@import "sections/header";
+@import "sections/main";
+@import "sections/footer";
