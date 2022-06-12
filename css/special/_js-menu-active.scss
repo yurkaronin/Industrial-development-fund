@@ -1,0 +1,26 @@
+.js-menu-active {
+  // стили для кнопки показа меню
+  .button--nav {
+    span {
+      background-color: transparent;
+
+      &::after {
+        transform: rotate(-45deg);
+        top: 0;
+        width: 100%;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+        top: 0;
+        width: 100%;
+
+      }
+    }
+
+  }
+
+  .header__navigation {
+    transform: translateX(0);
+  }
+}

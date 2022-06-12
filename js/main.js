@@ -1,5 +1,5 @@
 // Глобальные переменные
-
+const menuButton = document.querySelector('.button--nav');
 
 // функция подключения скриптов
 function include(url) {
@@ -8,4 +8,4 @@ function include(url) {
   document.getElementsByTagName('head')[0].appendChild(script);
 }
 
-// include("./js/parts/accordion.js");
+include("./js/parts/menu.js");

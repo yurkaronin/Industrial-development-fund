@@ -1,0 +1,16 @@
+.header {}
+
+.header__button-nav {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header__button-nav {
+    display: block;
+  }
+
+  .header__navigation {
+    transform: translate(-150%);
+    transition: transform 0.5s ease-in-out;
+  }
+}
