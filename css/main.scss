@@ -13,14 +13,16 @@
 @import "parts/button";
 @import "parts/buttons-group";
 @import "parts/logo";
+@import "parts/search";
 
 
 // sections
 @import "sections/header";
-@import "sections/main";
+// @import "sections/main";
 @import "sections/footer";
 
 
 // special
 @import "special/js-menu-active";
+@import "special/js-search-active";
 

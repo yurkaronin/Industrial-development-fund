@@ -15,16 +15,7 @@
   transition: 0.3s;
 }
 
-.button:hover,
-.button:active,
-.button:focus {
-  background-color: var(--col4);
-  color: var(--col2);
-
-}
-
 .button--icon {
-  // background-color: var(--col7);
   width: 48px;
   display: flex;
   align-items: center;
@@ -35,21 +26,9 @@
     pointer-events: none;
   }
 
-
 }
 
-.button--icon:hover,
-.button--icon:active,
-.button--icon:focus {
-  background-color: var(--col4);
-  color: var(--col2);
-
-  svg path {
-    stroke: var(--col2);
-  }
-}
-
-.button--user {
+.button--decorate {
   justify-content: space-between;
   gap: 16px;
   align-items: center;
@@ -96,5 +75,33 @@
     &::after {
       top: 8px;
     }
+  }
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  background-color: var(--col4);
+  color: var(--col2);
+
+  svg path {
+    stroke: var(--col2);
+  }
+
+}
+
+@media (max-width: 425px) {
+  .button {
+    height: 40px;
+  }
+
+  .button--icon {
+    width: 40px;
+  }
+
+  .button--nav {
+    height: 40px;
+    width: 40px;
+    padding: 12px 8px;
   }
 }

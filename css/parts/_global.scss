@@ -6,6 +6,7 @@ html {
   *::after {
     box-sizing: inherit;
   }
+
 }
 
 body {
@@ -33,4 +34,10 @@ button {
   font-size: inherit;
   line-height: inherit;
   letter-spacing: inherit;
+}
+
+:focus {
+  outline-style: none;
+  outline-width: 0px !important;
+  outline-color: none !important;
 }
