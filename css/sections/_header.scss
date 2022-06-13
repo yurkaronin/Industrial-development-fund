@@ -1,7 +1,37 @@
-.header {}
+.header {
+  padding-top: 24px;
+}
+
+.header__flex {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .header__logo,
+.header__buttons {
+  max-width: calc(50% - 8px);
+  width: 100%;
+} */
+
+.header__logo {
+  flex-basis: 805px;
+  margin: 0;
+  flex-grow: 2;
+}
+
+.header__buttons {
+  flex-basis: 385px;
+}
 
 .header__button-nav {
   display: none;
+}
+
+.header__navigation {
+  padding-bottom: 2px;
 }
 
 @media (max-width: 1200px) {

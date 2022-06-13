@@ -1,0 +1,23 @@
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  img {
+    display: block;
+    max-width: 72px;
+  }
+
+  figcaption {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--col3);
+
+    b {
+      font-weight: 700;
+    }
+  }
+}

@@ -32,28 +32,51 @@
 
 <body>
   <header class="header">
-    <div class="wrapper">
+    <div class="wrapper header__flex">
+
       <figure class="header__logo">
         <img src="./img/logo/1.svg" alt="логотип">
-        <figcaption>Фонд развития промышленности Краснодарского края</figcaption>
+        <figcaption><b>Фонд развития промышленности</b> Краснодарского края</figcaption>
       </figure>
+
       <div class="header__buttons">
         <ul class="buttons-group">
           <li>
-            <a class="buton button--icon button--cabitet" href="#">Личный кабинет</a>
+            <a class="button button--user" href="#">
+              <svg width="16" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 17v-2.403C15 13.227 10.7 11 8.002 11 5.305 11 1 13.227 1 14.597V17" stroke="#2A3F9B"
+                  stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
+                <path
+                  d="M8 11c-2.405 0-4-1.918-4-4.285v-1.43C4 2.918 5.595 1 8 1c2.405 0 4 1.92 4 4.285v1.43C12 9.082 10.405 11 8 11Z"
+                  stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10" /></svg>
+              Личный кабинет</a>
           </li>
           <li>
-            <a class="buton button--icon button--search" href="#"></a>
+            <a class="button button--icon" href="#">
+              <svg width="18" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.4 13.8A6.4 6.4 0 1 0 7.4 1a6.4 6.4 0 0 0 0 12.8Z" stroke="#2A3F9B" stroke-width="2"
+                  stroke-miterlimit="10" />
+                <path d="M12.308 12.31 17 17.002" stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" /></svg>
+            </a>
           </li>
           <li>
-            <a class="buton button--icon button--yey" href="#"></a>
+            <a class="button button--icon" href="#">
+              <svg width="26" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 12.692c1.988 0 3.6-1.653 3.6-3.692 0-2.04-1.612-3.692-3.6-3.692S9.4 6.96 9.4 9c0 2.04 1.612 3.692 3.6 3.692Z"
+                  stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M25 9s-3.05 8-12 8S1 9 1 9s3.05-8 12-8 12 8 12 8Z" stroke="#2A3F9B" stroke-width="2"
+                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M13 17c4.308 0 7.8-3.582 7.8-8S17.308 1 13 1 5.2 4.582 5.2 9s3.492 8 7.8 8Z" stroke="#2A3F9B"
+                  stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </a>
           </li>
-          <li>
-            <div class="header__button-nav">
-              <button class="button button--nav active" type="button">
-                <span></span>
-              </button>
-            </div>
+          <li class="header__button-nav">
+            <button class="button button--nav active" type="button">
+              <span></span>
+            </button>
           </li>
 
         </ul>
