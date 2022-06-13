@@ -151,10 +151,6 @@
 }
 
 @media (max-width: 768px) {
-  .navigation {
-    padding: 120px 0 20px;
-    height: calc(100vh - 120px - 20px);
-  }
 
   .navigation__item {
     width: 100%;
@@ -206,11 +202,6 @@
 }
 
 @media (max-width: 425px) {
-
-  .navigation {
-    padding: 0;
-    height: calc(100vh);
-  }
 
   .navigation__link {
     font-size: 14px;

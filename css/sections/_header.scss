@@ -52,6 +52,11 @@
 }
 
 @media (max-width: 1200px) {
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
   .header__button-nav {
     display: block;
   }
@@ -59,6 +64,8 @@
   .header__navigation {
     transform: translate(-150%);
     transition: transform 0.5s ease-in-out;
+    position: absolute;
+    height: calc(100vh);
   }
 }
 
@@ -89,9 +96,19 @@
   .header__button-nav {
     margin-left: 10px;
   }
+
+  .header__navigation {
+    padding: 120px 0 20px;
+    height: calc(100vh - 120px - 20px);
+  }
 }
 
 @media (max-width: 425px) {
+  .header__navigation {
+    padding: 0;
+    height: calc(100vh);
+  }
+
   .header__logo img {
     max-width: 45px;
   }
