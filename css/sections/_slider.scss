@@ -5,12 +5,15 @@
 }
 
 .slider__header {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #DDDFE6;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #DDDFE6;
+  }
+
 
 
   .title {
@@ -29,6 +32,10 @@
 
   button {
     background-color: var(--col11);
+
+    svg {
+      pointer-events: none;
+    }
 
     &:hover,
     &:focus,

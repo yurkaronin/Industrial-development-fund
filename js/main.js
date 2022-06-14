@@ -14,3 +14,4 @@ function include(url) {
 include("./js/parts/menu.js");
 include("./js/parts/search.js");
 include("./js/parts/big-table.js");
+include("./js/parts/sliders.js");
