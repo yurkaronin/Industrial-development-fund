@@ -46,7 +46,6 @@
   }
 
   a {
-    // text-decoration: none;
     color: var(--col5);
   }
 
@@ -185,5 +184,21 @@
     max-width: 32px;
     color: var(--col5);
     margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-content__gallery {
+    li {
+      width: calc(50% - 16px);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .page-content__gallery {
+    li {
+      width: 100%;
+    }
   }
 }
