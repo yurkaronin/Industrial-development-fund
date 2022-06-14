@@ -27,7 +27,7 @@ const swiper = new Swiper(".mySwiper", {
     }
   },
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   grabCursor: true,
   slidesPerView: "auto",
   centeredSlides: true,
@@ -63,7 +63,7 @@ const swiper2 = new Swiper(".mySwiper2", {
     }
   },
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   grabCursor: true,
   slidesPerView: "auto",
   centeredSlides: true,
@@ -98,7 +98,7 @@ const swiper3 = new Swiper(".mySwiper3", {
     }
   },
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   grabCursor: true,
   slidesPerView: "auto",
   centeredSlides: true,
