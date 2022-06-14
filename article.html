@@ -28,7 +28,7 @@
   <meta name="description" content="Отдельная статья">
 
   <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/normalize.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -37,7 +37,7 @@
   <header class="header">
     <div class="wrapper">
       <div class="header__flex">
-        <figure class="header__logo">
+        <figure class="header__logo logo">
           <img src="./img/logo/1.svg" alt="логотип">
           <figcaption><b>Фонд развития промышленности</b> Краснодарского края</figcaption>
         </figure>
@@ -172,6 +172,7 @@
                 stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" /></svg>
             Версия для слабовидящих</a>
         </li>
+      </ul>
     </div>
   </nav>
   <main class="main">
@@ -254,31 +255,31 @@
         <div class="page-content__gallery">
           <ul>
             <li><a href="#">
-                <img src="./img/news/1.jpg" alt="фото" width="480px">
+                <img src="./img/news/1.jpg" alt="фото" width="480">
                 <p>Кубанские промпредприятия направят более 55 млн рублей на модернизацию</p>
                 <hr>
               </a>
             </li>
             <li><a href="#">
-                <img src="./img/news/2.jpg" alt="фото" width="480px">
+                <img src="./img/news/2.jpg" alt="фото" width="480">
                 <p>Кубанские промпредприятия направят более 55 млн рублей на модернизацию</p>
                 <hr>
               </a>
             </li>
             <li><a href="#">
-                <img src="./img/news/3.jpg" alt="фото" width="480px">
+                <img src="./img/news/3.jpg" alt="фото" width="480">
                 <p>Кубанские промпредприятия направят более 55 млн рублей на модернизацию</p>
                 <hr>
               </a>
             </li>
             <li><a href="#">
-                <img src="./img/news/4.jpg" alt="фото" width="480px">
+                <img src="./img/news/4.jpg" alt="фото" width="480">
                 <p>Кубанские промпредприятия направят более 55 млн рублей на модернизацию</p>
                 <hr>
               </a>
             </li>
             <li><a href="#">
-                <img src="./img/news/1.jpg" alt="фото" width="480px">
+                <img src="./img/news/1.jpg" alt="фото" width="480">
                 <p>Кубанские промпредприятия направят более 55 млн рублей на модернизацию</p>
                 <hr>
               </a>
@@ -408,10 +409,73 @@
         </div>
       </div>
     </section>
+
   </main>
-  <footer class="footer"></footer>
+
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="footer__left">
+        <figure class="footer__logo logo">
+          <svg width="64" height="56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m31.805 25.204 14.242-6.978L64 25.204l-14.32 7.11-17.875-7.11ZM17.987 6.954 45.573 17.85l-14.236 6.975-13.35-17.872ZM31.56 25.805l17.67 7.061-31.037 15.456L31.56 25.805ZM16.264 33.255l14.38-7.029L17.184 48.9 2.906 56l13.358-22.744ZM13.274 18.764l17.225 6.866-14.687 7.179-6.05-8.184 3.511-5.861ZM2.072 14.261l10.792 4.235-3.414 5.7-7.378-9.935ZM0 0l16.869 6.666 13.707 18.35-17.335-6.91L0 0ZM9.399 25.269l5.893 7.973L.046 40.765 9.4 25.269Z"
+              fill="#fff" /></svg>
+          <figcaption><b>Фонд развития промышленности</b> Краснодарского края</figcaption>
+        </figure>
+        <ul class="footer__list list-reset">
+          <li>350911, Россия, г. Краснодар, ул. Трамвайная 2/6, каб. 403</li>
+          <li>тел: <a href="tel:88612054409">8(861) 205-44-09</a></li>
+          <li><a href="mailto:info@frpkk.ru">info@frpkk.ru</a></li>
+          <li><a href="#">Схема проезда</a></li>
+          <li><a href="#">Политика обработки персональных данных</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__center">
+
+        <div class="footer__logo">
+          <svg width="71" height="56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.942 0v33.346l-3.834-22.892L0 0v56l48.359-27.898-26.417 19.495V56L70.44 28 21.942 0Z"
+              fill="#fff" /></svg>
+          <img src="./img/logo/log-frp.png" alt="лого">
+        </div>
+
+        <ul class="footer__list list-reset">
+          <li>105062, Россия, Москва, Лялин переулок, д. 6, стр. 1</li>
+          <li><a href="mailto:frp@frprf.ru">frp@frprf.ru</a></li>
+          <li>Единый телефон<br>
+            Консультационного центра<br>
+            Фонда развития промышленности</li>
+          <li><a href="tel:88612054409">8 (800) 500-71-29</a></li>
+          <li><a href="tel:88612054409">8 (495) 120-24-16</a></li>
+        </ul>
+
+      </div>
+
+      <div class="footer__navigation">
+        <ul class="list-reset">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Фонд</a></li>
+          <li><a href="#">Займы/ Гранты</a></li>
+          <li><a href="#">Выставочная деятельность</a></li>
+          <li><a href="#">Центр консультирования предприятий</a></li>
+          <li><a href="#">Предоставленные займы</a></li>
+          <li><a href="#">ГИСП</a></li>
+          <li><a href="#">Пресс-центр</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        © 2022. Все права защищены. <br>
+        Разработка - <a href="#" target="_blank">Интернет-Имидж</a>
+
+      </div>
+
+
+    </div>
+  </footer>
   <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./libs/swiper/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

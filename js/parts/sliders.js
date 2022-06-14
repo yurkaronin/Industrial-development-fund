@@ -32,7 +32,7 @@ const swiper = new Swiper(".mySwiper", {
     }
   },
   loop: true,
-  autoplay: true,
+  // autoplay: true,
   grabCursor: true,
   slidesPerView: "auto",
   centeredSlides: true,
