@@ -1,7 +1,41 @@
 .hero {
-  background-image: url(../img/slider-top/demo.jpg);
-  object-fit: cover;
+  background-image: url(../img/article/1.jpg);
+  background-color: var(--col3);
+  color: var(--col2);
   background-position: center;
-  min-height: 832px;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
+  position: relative;
+  z-index: 0;
+  padding: 130px 0 140px;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--col3);
+    z-index: 1;
+    opacity: 0.67;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero__title {}
+
+  .hero__border {
+    background: #FFFFFF;
+    opacity: 0.2;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+
 }

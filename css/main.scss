@@ -8,17 +8,23 @@
 // blocks
 @import "parts/variables";
 @import "parts/global";
+
+@import "parts/title";
 @import "parts/wrapper";
 @import "parts/navigation";
 @import "parts/button";
 @import "parts/buttons-group";
 @import "parts/logo";
 @import "parts/search";
+@import "parts/breadcrumbs";
+
+
 
 
 // sections
 @import "sections/header";
 
+@import "sections/page-content";
 @import "sections/hero";
 @import "sections/quick-links";
 
