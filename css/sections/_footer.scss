@@ -8,6 +8,7 @@
   a {
     color: var(--col2);
     transition: 0.3s;
+
     &:hover,
     &:focus,
     &:active {
@@ -19,6 +20,7 @@
   .logo {
     min-height: 56px;
     margin-bottom: 20px;
+
     figcaption {
       color: var(--col2);
       font-size: 18px;
@@ -44,18 +46,14 @@
   width: calc((100% / 3) - 22px);
 }
 
-.footer__left {
+.footer__left {}
 
-}
-
-.footer__center {
-
-}
+.footer__center {}
 
 .footer__navigation {
 
   li {
-    margin-bottom: 16px;
+    margin-bottom: 26px;
   }
 
   a {
@@ -64,6 +62,11 @@
     padding-left: 24px;
     display: flex;
     align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
     &::before {
       content: '';
@@ -80,6 +83,7 @@
     &:focus,
     &:active {
       color: var(--col2);
+
       &::before {
         background-color: var(--col5);
       }
@@ -89,11 +93,13 @@
 }
 
 .footer__copyright {
-  margin-top: -75px;
+  margin-top: -45px;
   width: 100%;
+  line-height: 2;
 
   a {
     text-decoration: none;
+
     &:hover,
     &:focus,
     &:active {
@@ -110,12 +116,15 @@
 .footer__list {
 
   li {
-    margin-bottom: 16px;
+    margin-bottom: 26px;
+
+    &:last-child {
+      margin-top: -16px;
+      margin-bottom: 0;
+    }
   }
 
   a {
     text-decoration: none;
   }
 }
-
-

@@ -1,18 +1,36 @@
 .slider {
   background-color: var(--col10);
   color: var(--col3);
-  padding: 60px 0 80px;
+  padding: 60px 0 55px;
 }
 
 .slider__header {
+
   .wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 32px;
     justify-content: space-between;
     padding-bottom: 20px;
-    border-bottom: 1px solid #DDDFE6;
+    position: relative;
+
+
+    hr {
+      display: block;
+      border: none;
+      width: calc(100% - 80px);
+      margin: 0 40px;
+      height: 1px;
+      background-color: #DDDFE6;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+
   }
+
+
 
 
 
@@ -21,6 +39,7 @@
     font-weight: 700;
     max-width: max-content;
     display: inline-block;
+    margin: 0;
   }
 }
 
