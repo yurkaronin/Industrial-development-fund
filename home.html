@@ -26,6 +26,9 @@
 
   <title>Главная</title>
   <meta name="description" content="Главная страница сайта фонда развития промышленности Краснодарского края.">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/normalize.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -34,7 +37,7 @@
   <header class="header">
     <div class="wrapper">
       <div class="header__flex">
-        <figure class="header__logo">
+        <figure class="header__logo logo">
           <img src="./img/logo/1.svg" alt="логотип">
           <figcaption><b>Фонд развития промышленности</b> Краснодарского края</figcaption>
         </figure>
@@ -147,52 +150,395 @@
         <li class="navigation__item">
 
           <a class="navigation__link" href="#">
-            <svg width="16" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 17v-2.403C15 13.227 10.7 11 8.002 11 5.305 11 1 13.227 1 14.597V17" stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/><path d="M8 11c-2.405 0-4-1.918-4-4.285v-1.43C4 2.918 5.595 1 8 1c2.405 0 4 1.92 4 4.285v1.43C12 9.082 10.405 11 8 11Z" stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10"/></svg>
+            <svg width="16" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 17v-2.403C15 13.227 10.7 11 8.002 11 5.305 11 1 13.227 1 14.597V17" stroke="#2A3F9B"
+                stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
+              <path
+                d="M8 11c-2.405 0-4-1.918-4-4.285v-1.43C4 2.918 5.595 1 8 1c2.405 0 4 1.92 4 4.285v1.43C12 9.082 10.405 11 8 11Z"
+                stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10" /></svg>
             Личный кабинет</a>
         </li>
         <li class="navigation__item">
 
           <a class="navigation__link" href="#">
-            <svg width="26" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 12.692c1.989 0 3.6-1.653 3.6-3.692 0-2.04-1.611-3.692-3.6-3.692-1.988 0-3.6 1.653-3.6 3.692 0 2.04 1.612 3.692 3.6 3.692Z" stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 9s-3.05 8-12 8S1 9 1 9s3.05-8 12-8 12 8 12 8Z" stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 17c4.308 0 7.8-3.582 7.8-8S17.308 1 13 1 5.2 4.582 5.2 9s3.492 8 7.8 8Z" stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="26" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13 12.692c1.989 0 3.6-1.653 3.6-3.692 0-2.04-1.611-3.692-3.6-3.692-1.988 0-3.6 1.653-3.6 3.692 0 2.04 1.612 3.692 3.6 3.692Z"
+                stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M25 9s-3.05 8-12 8S1 9 1 9s3.05-8 12-8 12 8 12 8Z" stroke="#2A3F9B" stroke-width="2"
+                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M13 17c4.308 0 7.8-3.582 7.8-8S17.308 1 13 1 5.2 4.582 5.2 9s3.492 8 7.8 8Z" stroke="#2A3F9B"
+                stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" /></svg>
             Версия для слабовидящих</a>
         </li>
     </div>
   </nav>
   <main class="main">
-    <section class="hero">
-      <div class="wrapper">
 
+    <section class="slder-home">
+      <div class="slder-home__content swiper mySwiper2">
+        <div class="swiper-wrapper">
+
+          <article class="slder-home__item swiper-slide">
+            <img src="./img/slider-top/1.jpg" alt="фото">
+            <div class="slder-home__details">
+              <h3>Конверсия</h3>
+              <hr>
+              <p>Предоставление займов предприятиям оборонно-промышленного комплекса</p>
+            </div>
+          </article>
+          <article class="slder-home__item swiper-slide">
+            <img src="./img/slider-top/2.jpg" alt="фото">
+            <div class="slder-home__details">
+              <h3>Машиностроение</h3>
+              <hr>
+              <p>Предоставление займа на реализацию инвестиционных проектов</p>
+            </div>
+          </article>
+          <article class="slder-home__item swiper-slide">
+            <img src="./img/slider-top/3.jpg" alt="фото">
+            <div class="slder-home__details">
+              <h3>Бизнес привилегия</h3>
+              <hr>
+              <p>Предоставление займов под залог приобретаемого нового промышленного оборудования</p>
+            </div>
+          </article>
+          <article class="slder-home__item swiper-slide">
+            <img src="./img/slider-top/4.jpg" alt="фото">
+            <div class="slder-home__details">
+              <h3>Приоритет</h3>
+              <hr>
+              <p>Предоставление займов под залог приобретаемого нового промышленного оборудования</p>
+            </div>
+          </article>
+
+        </div>
       </div>
+
     </section>
+
     <section class="quick-links">
       <div class="wrapper">
         <ul class="quick-links__list">
           <li><a href="#">
-            <span>Как получить займ</span>
-            <svg width="51" height="50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25.443 14.444a3.667 3.667 0 1 0 0-7.333 3.667 3.667 0 0 0 0 7.333ZM30.332 32.924c-2.826 1.712-4.554.426-3.625-2.962 0 0 1.37-4.59 1.813-6.124 1.905-6.6-3.858-5.515-10.41.434 3.16-1.867 4.356-.403 3.438 2.563-.46 1.491-1.72 5.993-1.72 5.993-1.3 5.344 2.79 7.429 10.504.096Z" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M25.443 1C11.943 1 1 10.576 1 22.388c0 6.877 3.725 12.979 9.489 16.891-.625 4.133-2.2 8.009-3.333 9.721 5.142-1.049 9.556-3.322 12.794-5.787 1.768.356 3.601.562 5.493.562 13.5 0 24.443-9.575 24.443-21.387C49.886 10.576 38.943 1 25.443 1Z" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/></svg>
-          </a>
+              <span>Как получить займ</span>
+              <svg width="51" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M25.443 14.444a3.667 3.667 0 1 0 0-7.333 3.667 3.667 0 0 0 0 7.333ZM30.332 32.924c-2.826 1.712-4.554.426-3.625-2.962 0 0 1.37-4.59 1.813-6.124 1.905-6.6-3.858-5.515-10.41.434 3.16-1.867 4.356-.403 3.438 2.563-.46 1.491-1.72 5.993-1.72 5.993-1.3 5.344 2.79 7.429 10.504.096Z"
+                  stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M25.443 1C11.943 1 1 10.576 1 22.388c0 6.877 3.725 12.979 9.489 16.891-.625 4.133-2.2 8.009-3.333 9.721 5.142-1.049 9.556-3.322 12.794-5.787 1.768.356 3.601.562 5.493.562 13.5 0 24.443-9.575 24.443-21.387C49.886 10.576 38.943 1 25.443 1Z"
+                  stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" /></svg>
+            </a>
           </li>
           <li><a href="#">
-            <span>Подать заявку на займ</span>
-            <svg width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25 49c13.255 0 24-10.745 24-24S38.255 1 25 1 1 11.745 1 25s10.745 24 24 24ZM17.8 29.8h10.8" stroke="#fff" stroke-width="2" stroke-miterlimit="10"/><path d="M21.4 25h7.2a3.6 3.6 0 0 0 3.6-3.6V19a3.6 3.6 0 0 0-3.6-3.6h-7.2V37M17.8 25h3.6" stroke="#fff" stroke-width="2" stroke-miterlimit="10"/></svg>
-          </a>
+              <span>Подать заявку на займ</span>
+              <svg width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25 49c13.255 0 24-10.745 24-24S38.255 1 25 1 1 11.745 1 25s10.745 24 24 24ZM17.8 29.8h10.8"
+                  stroke="#fff" stroke-width="2" stroke-miterlimit="10" />
+                <path d="M21.4 25h7.2a3.6 3.6 0 0 0 3.6-3.6V19a3.6 3.6 0 0 0-3.6-3.6h-7.2V37M17.8 25h3.6" stroke="#fff"
+                  stroke-width="2" stroke-miterlimit="10" /></svg>
+            </a>
           </li>
           <li><a href="#">
-            <span>Подать заявку на участие в выставке</span>
-            <svg width="40" height="50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.546 1C9.303 1 1 9.303 1 19.546c0 8.157 5.275 15.07 12.594 17.551L19.546 49l5.95-11.903c7.32-2.482 12.595-9.394 12.595-17.552C38.09 9.303 29.788 1 19.545 1Z" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/><path d="M20.636 38.06c-.36.02-.724.03-1.09.03-2.305 0-4.51-.42-6.546-1.187M19.581 7.545l3.383 6.854 7.564 1.1-5.474 5.334 1.292 7.531-6.765-3.555-6.763 3.555 1.291-7.531-5.473-5.335 7.564-1.1 3.381-6.853Z" stroke="#fff" stroke-width="2" stroke-miterlimit="10"/></svg>
-          </a>
+              <span>Подать заявку на участие в выставке</span>
+              <svg width="40" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.546 1C9.303 1 1 9.303 1 19.546c0 8.157 5.275 15.07 12.594 17.551L19.546 49l5.95-11.903c7.32-2.482 12.595-9.394 12.595-17.552C38.09 9.303 29.788 1 19.545 1Z"
+                  stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                <path
+                  d="M20.636 38.06c-.36.02-.724.03-1.09.03-2.305 0-4.51-.42-6.546-1.187M19.581 7.545l3.383 6.854 7.564 1.1-5.474 5.334 1.292 7.531-6.765-3.555-6.763 3.555 1.291-7.531-5.473-5.335 7.564-1.1 3.381-6.853Z"
+                  stroke="#fff" stroke-width="2" stroke-miterlimit="10" /></svg>
+            </a>
           </li>
           <li><a href="#">
-            <span>ФРП КК не работает с посредниками</span>
-            <svg width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25 49c13.255 0 24-10.745 24-24S38.255 1 25 1 1 11.745 1 25s10.745 24 24 24Z" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/><path d="M25 32.2a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2ZM25 27.4c1.304 0 2.1-.713 2.4-1.8.3-1.087.937-8.519 1.2-12.467C28.745 10.95 26.988 9.4 25 9.4s-3.745 1.55-3.6 3.733c.263 3.948.9 11.379 1.2 12.467.3 1.088 1.096 1.8 2.4 1.8Z" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/></svg>
-          </a>
+              <span>ФРП КК не работает с посредниками</span>
+              <svg width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25 49c13.255 0 24-10.745 24-24S38.255 1 25 1 1 11.745 1 25s10.745 24 24 24Z" stroke="#fff"
+                  stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                <path
+                  d="M25 32.2a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2ZM25 27.4c1.304 0 2.1-.713 2.4-1.8.3-1.087.937-8.519 1.2-12.467C28.745 10.95 26.988 9.4 25 9.4s-3.745 1.55-3.6 3.733c.263 3.948.9 11.379 1.2 12.467.3 1.088 1.096 1.8 2.4 1.8Z"
+                  stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" /></svg>
+            </a>
           </li>
         </ul>
       </div>
     </section>
-  </main>
-  <footer class="footer"></footer>
 
+    <section class="activities">
+      <div class="wrapper">
+        <h2 class="activities__title title">Деятельность фонда</h2>
+        <hr>
+        <div class="activities__list">
+          <a href="#">
+            <svg width="27" height="53" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M25.483 15.915c-5.366.427-9.6 4.93-9.6 10.404s4.234 9.977 9.6 10.404v14.915h-3.62a.57.57 0 0 1-.559-.45v-.002l-.881-4.045a1 1 0 0 0-.667-.738 21.167 21.167 0 0 1-2.998-1.243 1 1 0 0 0-.993.051l-3.482 2.239a.572.572 0 0 1-.714-.076h-.001l-6.303-6.301a.575.575 0 0 1-.077-.717l2.24-3.483a1 1 0 0 0 .05-.994c-.492-.966-.907-1.97-1.243-2.997a1 1 0 0 0-.738-.667l-4.045-.88A.573.573 0 0 1 1 30.776v-8.914c0-.269.187-.502.451-.56l4.046-.879a1 1 0 0 0 .738-.667c.336-1.028.751-2.03 1.242-2.997a1 1 0 0 0-.05-.994l-2.24-3.483a.575.575 0 0 1 .078-.716l6.303-6.301v-.001a.572.572 0 0 1 .715-.076l3.482 2.24a1 1 0 0 0 .994.05c.967-.492 1.969-.907 2.997-1.243a1 1 0 0 0 .667-.738l.88-4.045.001-.002a.57.57 0 0 1 .558-.45h3.621v14.915Z"
+                stroke="#163D9F" stroke-width="2" stroke-miterlimit="2" stroke-linejoin="round" /></svg>
+            <span>Промышленный портал Краснодарского края</span>
+          </a>
+          <a href="#">
+            <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="m30.299 13.701-11.127 5.471L13.7 30.299l11.127-5.471 5.471-11.127ZM19.172 19.172l5.656 5.656"
+                stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+              <path d="M22 43c11.598 0 21-9.402 21-21S33.598 1 22 1 1 10.402 1 22s9.402 21 21 21Z" stroke="#2A3F9B"
+                stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+              <path
+                d="M38 20.136C37.146 12.727 31.273 6.855 23.864 6L22 9.107 20.136 6C12.728 6.854 6.855 12.728 6 20.136L9.107 22 6 23.864C6.854 31.272 12.728 37.145 20.136 38L22 34.893 23.864 38c7.408-.854 13.281-6.728 14.136-14.136L34.893 22 38 20.136Z"
+                stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" /></svg>
+            <span>Навигатор мер поддержки</span>
+          </a>
+          <a href="#">
+            <svg width="39" height="47" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M34 43v-2M34 39v-2M34 35V17h4L30 6l-8 11h4v5M5 43v-2M5 39v-2M5 35V14H1l9-13 9 13h-4v4M10 24v12"
+                stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+              <path
+                d="M13 31h7M15 27.667h5.333c1.473 0 2.667-1.12 2.667-2.5V23.5c0-1.38-1.194-2.5-2.667-2.5H15v15M13 28h2"
+                stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10" />
+              <path d="M15 47v-8M26 27v8" stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10"
+                stroke-linejoin="round" /></svg>
+            <span>Инвестиционный лифт</span>
+          </a>
+          <a href="#">
+            <svg width="48" height="46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M29.5 21h5M32 21v-8h-2M32 8.5v1M9 37.645v3.401c0 .899-.658 1.688-1.613 1.936L1 45M17 39.766v1.28c0 .899.658 1.688 1.613 1.936L25 45"
+                stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M11.614 39.015c-3.228-.84-5.649-4.307-5.649-7.739v-4.759c0-1.586 2.308-3.391 4.908-4.494"
+                stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M9.93 19.378c0 3.966 8.07 7.622 10.897 7.518M20 33v-6" stroke="#2A3F9B" stroke-width="2"
+                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M15 38v2c4.8 0 8-3.828 8-7l2-1v-6l-2-1v-1c0-5.694-4.256-10.967-10-10.967S3 17.649 3 23.344V25l-2 1v6l2.4 1.051"
+                stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M28.22 30.503c.58.151.867.207 1.473.288 0 0-.026 3.688-.651 6.209 4.583-1.333 6.873-6.517 6.873-6.517l-.05-.004C42.274 28.771 47 22.945 47 16c0-8.284-6.716-15-15-15-6.356 0-11.79 3.953-13.974 9.535"
+                stroke="#2A3F9B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" /></svg>
+            <span>Консультационный центр</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="results">
+      <div class="wrapper">
+        <h2 class="activities__title title">Итоги и результаты</h2>
+        <hr>
+        <ul class="results__list list-reset">
+          <li><span>162</span>выданных займа</li>
+          <li><span>3,6</span>общая сумма выданных займов<br>(млрд. руб.)</li>
+          <li><span>100,0</span>объем выручки от&nbsp;реализации проектов (млрд. руб.)</li>
+          <li><span>67</span>проведенных выставочно-ярмарочных мероприятий</li>
+        </ul>
+      </div>
+      <img class="decorate" src="./img/bg/texture-1.svg" alt="текстура">
+    </section>
+
+    <section class="slider slider--stories js-slider-stories">
+      <div class="wrapper">
+        <header class="slider__header">
+          <h2 class="slider__title title">Истории успеха</h2>
+          <div class="slider__navigation">
+
+            <a href="#" class="slider__btn button">Все истории</a>
+            <button class="button button--icon js-slider-prew" type="button">
+              <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M.293 7.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L2.414 8l5.657-5.657A1 1 0 0 0 6.657.93L.293 7.293ZM17 7H1v2h16V7Z"
+                  fill="#1E2A5A" /></svg>
+            </button>
+            <button class="button button--icon js-slider-next" type="button">
+              <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.707 8.707a1 1 0 0 0 0-1.414L10.343.929A1 1 0 1 0 8.93 2.343L14.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414l6.364-6.364ZM0 9h16V7H0v2Z"
+                  fill="#1E2A5A" /></svg>
+            </button>
+          </div>
+        </header>
+        <hr>
+      </div>
+
+      <div class="swiper mySwiper3 slider__content">
+        <div class="swiper-wrapper">
+
+          <article class="slider__item swiper-slide">
+            <img src="./img/stories/1.jpg" alt="фото">
+            <h3>Заемное финансирование на приобретение товарно - материальных ценностей ПАО «Хадыженский машиностроительный завод»</h3>
+            <hr>
+          </article>
+          <article class="slider__item swiper-slide">
+            <img src="./img/stories/2.jpg" alt="фото">
+            <h3>Заемное финансирование на приобретение оборудования для ОАО «Аванта»</h3>
+            <hr>
+          </article>
+          <article class="slider__item swiper-slide">
+            <img src="./img/stories/3.jpg" alt="фото">
+            <h3>Заемное финансирование на приобретение оборудования ООО «Староминская сельхозтехника - МТЗ»</h3>
+            <hr>
+          </article>
+          <article class="slider__item swiper-slide">
+            <img src="./img/stories/1.jpg" alt="фото">
+            <h3>Заемное финансирование на приобретение товарно - материальных ценностей ПАО «Хадыженский машиностроительный завод»</h3>
+            <hr>
+          </article>
+          <article class="slider__item swiper-slide">
+            <img src="./img/stories/2.jpg" alt="фото">
+            <h3>Заемное финансирование на приобретение товарно - материальных ценностей ПАО «Хадыженский машиностроительный завод»</h3>
+            <hr>
+          </article>
+          <article class="slider__item swiper-slide">
+            <img src="./img/stories/3.jpg" alt="фото">
+            <h3>Заемное финансирование на приобретение товарно - материальных ценностей ПАО «Хадыженский машиностроительный завод»</h3>
+            <hr>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="slider">
+      <div class="wrapper">
+        <header class="slider__header">
+          <h2 class="slider__title title">Партнеры</h2>
+          <div class="slider__navigation">
+            <button class="button button--icon js-slider-prew" type="button">
+              <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M.293 7.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L2.414 8l5.657-5.657A1 1 0 0 0 6.657.93L.293 7.293ZM17 7H1v2h16V7Z"
+                  fill="#1E2A5A" /></svg>
+            </button>
+            <button class="button button--icon js-slider-next" type="button">
+              <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.707 8.707a1 1 0 0 0 0-1.414L10.343.929A1 1 0 1 0 8.93 2.343L14.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414l6.364-6.364ZM0 9h16V7H0v2Z"
+                  fill="#1E2A5A" /></svg>
+            </button>
+          </div>
+        </header>
+        <hr>
+      </div>
+
+      <div class="swiper mySwiper slider__content">
+        <div class="swiper-wrapper">
+          <article class="slider__item swiper-slide">
+            <img src="./img/partners/1.png" alt="лого">
+            <h3>Торгово-промышленная палата Краснодарского края</h3>
+            <hr>
+            <a href="https://kuban.tpprf.ru/
+            " target="_blank">https://kuban.tpprf.ru/
+            </a>
+          </article>
+
+          <article class="slider__item swiper-slide">
+            <img src="./img/partners/2.png" alt="лого">
+            <h3>Торгово-промышленная палата Краснодарского края</h3>
+            <hr>
+            <a href="https://kuban.tpprf.ru/
+            " target="_blank">https://kuban.tpprf.ru/
+            </a>
+          </article>
+
+          <article class="slider__item swiper-slide">
+            <img src="./img/partners/3.png" alt="лого">
+            <h3>Торгово-промышленная палата Краснодарского края</h3>
+            <hr>
+            <a href="https://kuban.tpprf.ru/
+            " target="_blank">https://kuban.tpprf.ru/
+            </a>
+          </article>
+
+          <article class="slider__item swiper-slide">
+            <img src="./img/partners/4.png" alt="лого">
+            <h3>Торгово-промышленная палата Краснодарского края</h3>
+            <hr>
+            <a href="https://kuban.tpprf.ru/
+            " target="_blank">https://kuban.tpprf.ru/
+            </a>
+          </article>
+
+          <article class="slider__item swiper-slide">
+            <img src="./img/partners/5.png" alt="лого">
+            <h3>Торгово-промышленная палата Краснодарского края</h3>
+            <hr>
+            <a href="https://kuban.tpprf.ru/
+            " target="_blank">https://kuban.tpprf.ru/
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="footer__left">
+        <figure class="footer__logo logo">
+          <svg width="64" height="56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m31.805 25.204 14.242-6.978L64 25.204l-14.32 7.11-17.875-7.11ZM17.987 6.954 45.573 17.85l-14.236 6.975-13.35-17.872ZM31.56 25.805l17.67 7.061-31.037 15.456L31.56 25.805ZM16.264 33.255l14.38-7.029L17.184 48.9 2.906 56l13.358-22.744ZM13.274 18.764l17.225 6.866-14.687 7.179-6.05-8.184 3.511-5.861ZM2.072 14.261l10.792 4.235-3.414 5.7-7.378-9.935ZM0 0l16.869 6.666 13.707 18.35-17.335-6.91L0 0ZM9.399 25.269l5.893 7.973L.046 40.765 9.4 25.269Z"
+              fill="#fff" /></svg>
+          <figcaption><b>Фонд развития промышленности</b> Краснодарского края</figcaption>
+        </figure>
+        <ul class="footer__list list-reset">
+          <li>350911, Россия, г. Краснодар, ул. Трамвайная 2/6, каб. 403</li>
+          <li>тел: <a href="tel:88612054409">8(861) 205-44-09</a></li>
+          <li><a href="mailto:info@frpkk.ru">info@frpkk.ru</a></li>
+          <li><a href="#">Схема проезда</a></li>
+          <li><a href="#">Политика обработки персональных данных</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__center">
+
+        <div class="footer__logo">
+          <svg width="71" height="56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.942 0v33.346l-3.834-22.892L0 0v56l48.359-27.898-26.417 19.495V56L70.44 28 21.942 0Z"
+              fill="#fff" /></svg>
+          <img src="./img/logo/log-frp.png" alt="лого">
+        </div>
+
+        <ul class="footer__list list-reset">
+          <li>105062, Россия, Москва, Лялин переулок, д. 6, стр. 1</li>
+          <li><a href="mailto:frp@frprf.ru">frp@frprf.ru</a></li>
+          <li>Единый телефон<br>
+            Консультационного центра<br>
+            Фонда развития промышленности</li>
+          <li><a href="tel:88612054409">8 (800) 500-71-29</a></li>
+          <li><a href="tel:88612054409">8 (495) 120-24-16</a></li>
+        </ul>
+
+      </div>
+
+      <div class="footer__navigation">
+        <ul class="list-reset">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Фонд</a></li>
+          <li><a href="#">Займы/ Гранты</a></li>
+          <li><a href="#">Выставочная деятельность</a></li>
+          <li><a href="#">Центр консультирования предприятий</a></li>
+          <li><a href="#">Предоставленные займы</a></li>
+          <li><a href="#">ГИСП</a></li>
+          <li><a href="#">Пресс-центр</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        © 2022. Все права защищены. <br>
+        Разработка - <a href="#" target="_blank">Интернет-Имидж</a>
+
+      </div>
+
+
+    </div>
+  </footer>
+  <!-- Swiper JS -->
+  <script src="./libs/swiper/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

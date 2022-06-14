@@ -5,8 +5,6 @@
 }
 
 .slider__header {
-
-  .wrapper {
     display: flex;
     align-items: flex-start;
     gap: 32px;
@@ -14,34 +12,16 @@
     padding-bottom: 20px;
     position: relative;
 
-
-    hr {
-      display: block;
-      border: none;
-      width: calc(100% - 80px);
-      margin: 0 40px;
-      height: 1px;
-      background-color: #DDDFE6;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-    }
-
-
   }
 
-
-
-
-
-  .title {
+  .slider__title {
     color: var(--col3);
     font-weight: 700;
     max-width: max-content;
     display: inline-block;
     margin: 0;
   }
-}
+
 
 .slider__navigation {
   display: flex;
@@ -100,6 +80,7 @@
     display: block;
     border: none;
     margin-bottom: 17px;
+    opacity: 1;
   }
 
   a {
@@ -108,4 +89,13 @@
     opacity: 0.6;
     font-family: inherit;
   }
+}
+
+.slider--stories {
+  background-color: var(--col2);
+}
+
+.slider__btn {
+  background-color: var(--col4);
+  color: var(--col2);
 }

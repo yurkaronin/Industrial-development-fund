@@ -1,3 +1,7 @@
+.navigation {
+  z-index: 111;
+}
+
 .navigation__list {
   list-style: none;
   padding: 0;
@@ -9,10 +13,6 @@
   flex-wrap: wrap;
   align-items: center;
 }
-
-// .navigation__item {
-//   margin-right: auto;
-// }
 
 .navigation__link {
   font-family: var(--ff1);

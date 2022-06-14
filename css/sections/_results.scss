@@ -1,0 +1,41 @@
+.results {
+  background-color: var(--col10);
+  color: var(--col3);
+  padding:110px 0;
+  padding-top: 0;
+  position: relative;
+
+  hr {
+    margin: 0;
+    margin-bottom: 30px;
+    background: #1E2A5A;
+    opacity: 0.2;
+  }
+}
+
+.results__list {
+  display: flex;
+  gap: 32px;
+  margin-top: 130px;
+
+  li {
+    width: calc((100% / 4) - 22px);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--col3);
+
+    span {
+      font-weight: 600;
+      font-size: 116px;
+      line-height: 1;
+      color: var(--col5);
+      display: block;
+      margin-bottom: 40px;
+    }
+  }
+
+
+}

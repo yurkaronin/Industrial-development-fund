@@ -17,9 +17,13 @@
 @import "parts/logo";
 @import "parts/search";
 @import "parts/breadcrumbs";
+@import "parts/decorate";
 
 // sections
 @import "sections/header";
+@import "sections/slder-home";
+@import "sections/activities";
+@import "sections/results";
 
 @import "sections/page-content";
 @import "sections/hero";
