@@ -16,3 +16,32 @@
     font-size: 16px;
   }
 }
+
+@media (max-width: 650px) {
+  .sticky-section {
+    position: initial;
+    z-index: 11;
+    right: 0;
+    top: auto;
+    transform-origin: 0%;
+    transform: none;
+    white-space: nowrap;
+  }
+
+  .sticky-section .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-top: 1px solid #DDDFE6;
+    color: var(--col3);
+    padding: 12px;
+    align-items: center;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--col3);
+    }
+  }
+}

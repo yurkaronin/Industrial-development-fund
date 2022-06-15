@@ -116,6 +116,12 @@
   margin-bottom: 20px;
   height: 56px;
   transition: all .3s;
+  svg {
+    width: 65px;
+  }
+  figcaption {
+    width: calc(100% - 65px);
+  }
 
   &:hover {
     svg path {
@@ -125,6 +131,19 @@
 }
 
 .footer__logo--mod {
+  display: flex;
+  gap: 12px;
+
+  svg {
+    width: 71px;
+    height: 64px;
+  }
+  img {
+    max-width: calc(calc(100% - 71px - 12px));
+    object-fit: contain;
+    display: block;
+  }
+
   &:hover {
     svg path {
       fill: #DB1E35;
@@ -185,4 +204,21 @@
       width: calc(50% - 16px);
     }
   }
+}
+
+@media (max-width: 650px) {
+  .footer__navigation li,
+  .footer__left,
+  .footer__center,
+  .footer__copyright span {
+    width: 100%;
+}
+
+.footer__wrapper {
+  gap: 48px;
+}
+
+.footer__copyright {
+  gap: 0;
+}
 }

@@ -45,6 +45,13 @@
 }
 
 @media (max-width: 1300px) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  }
   .header__logo {
     flex-basis: content;
     flex-grow: initial;

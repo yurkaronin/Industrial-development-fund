@@ -73,4 +73,11 @@ hr {
   }
 }
 
-
+@media (max-width: 650px) {
+  .activities__list {
+    gap: 10px;
+    a {
+      width: 100%;
+    }
+  }
+}

@@ -269,3 +269,18 @@
     max-width: 368px;
   }
 }
+
+@media (max-width: 650px) {
+  .slider__header {
+    flex-wrap: wrap;
+  }
+
+  .slider__navigation {
+    max-width: 100%;
+    width: 100%;
+
+    .slider__btn {
+      margin-right: auto;
+    }
+  }
+}

@@ -38,8 +38,8 @@
   }
 
   .swiper-pagination-bullet {
-    background-color: var(--col2);
-    opacity: 0.7;
+    background-color: #CBCCD1;
+    opacity: 1;
   }
 
   .swiper-pagination-bullet-active {
@@ -181,9 +181,13 @@
 
   .data-list {
     gap: 16px;
+    align-items: stretch;
 
     li {
       width: calc(50% - 8px);
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
     }
   }
 
@@ -193,7 +197,63 @@
 }
 
 @media (max-width: 768px) {
+
+  .slder-home__item {
+    max-width: 500px;
+  }
+
   .slder-home__details h3 {
     font-size: 32px;
+  }
+
+  .slder-home__details p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .slder-home__item {
+    max-width: 100%;
+  }
+
+  .slder-home__item img {
+    position: initial;
+    max-height: 400px;
+    object-fit: cover;
+    background-position: top center;
+  }
+
+  .slder-home__item::after {
+    display: none;
+
+  }
+
+  .slder-home .swiper-pagination {
+    bottom: 28px !important;
+  }
+
+  .slder-home .button--custom span {
+    display: none;
+  }
+
+  .slder-home .button--custom {
+    border: none;
+    width: auto;
+    height: auto;
+
+    svg path {
+      fill: #2A3F9B;
+    }
+  }
+
+  .slder-home__data {
+    opacity: 1;
+    max-height: 1000px;
+    overflow: hidden;
+    bottom: 0;
+  }
+
+  .slder-home__details {
+    padding-bottom: 90px;
   }
 }
