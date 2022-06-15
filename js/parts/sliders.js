@@ -37,3 +37,16 @@ const swiper3 = new Swiper(".mySwiper3", {
   spaceBetween: 32,
   centeredSlides: true,
 });
+
+const swiper4 = new Swiper(".mySwiper4", {
+  navigation: {
+     nextEl: ".js-slider-news .js-slider-next",
+     prevEl: ".js-slider-news .js-slider-prew",
+   },
+   loop: true,
+   // autoplay: true,
+   grabCursor: true,
+   slidesPerView: "auto",
+   spaceBetween: 32,
+   centeredSlides: true,
+ });
