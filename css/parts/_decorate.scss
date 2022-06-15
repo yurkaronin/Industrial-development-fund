@@ -8,3 +8,9 @@
   z-index: 0;
 }
 
+@media (max-width: 1500px) {
+  .decorate {
+    object-fit: none;
+  }
+}
+

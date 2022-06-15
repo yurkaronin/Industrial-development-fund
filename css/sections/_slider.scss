@@ -255,3 +255,17 @@
 }
 
 // КОНЕЦ новостной слайдер
+
+@media (max-width: 1200px) {
+  .slider--stories .slider__item {
+    max-width: 528px;
+  }
+
+  .slider--news .slider__item {
+    max-width: 448px;
+  }
+
+  .slider--partners .slider__item {
+    max-width: 368px;
+  }
+}

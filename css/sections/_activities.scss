@@ -54,3 +54,23 @@ hr {
     }
   }
 }
+
+@media (max-width: 1500px) {
+  .activities__list {
+    a {
+      width: calc((100% / 2) - 16px);
+    }
+
+    span {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .activities__list a {
+    padding: 38px 20px;
+  }
+}
+
+

@@ -5,6 +5,11 @@
   padding-top: 0;
   position: relative;
 
+  background-image: url(../img/bg/texture-1.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: inherit;
+
   hr {
     margin: 0;
     margin-bottom: 30px;
@@ -38,4 +43,25 @@
   }
 
 
+}
+
+@media (max-width: 1500px) {
+  .results {
+    padding-bottom: 80px;
+  }
+  .results__list {
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    li {
+      width: calc((100% / 2) - 16px);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .results__list li span {
+    font-size: 104px;
+    margin-bottom: 25px;
+  }
 }

@@ -2,10 +2,9 @@
   background-color: var(--col4);
   position: relative;
   z-index: 11;
-
-  .wrapper {
-    max-width: calc(1760px + 40px + 40px);
-  }
+  max-width: 100%;
+  padding: 0 40px;
+  width: 100%;
 }
 
 .quick-links__list {
@@ -32,19 +31,20 @@
     text-align: right;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding: 27px 0;
-    padding-right: 54px;
+    padding: 20px 35px 20px 20px;
     text-decoration: none;
     position: relative;
     justify-content: flex-end;
     transition: 0.3s;
+    min-height: 104px;
 
     span {
-      max-width: 300px;
+      width: calc(100% - 50px - 24px);
     }
 
     svg {
       transition: 0.3s;
+      max-width: 50px;
     }
 
     &::after {
@@ -69,12 +69,13 @@
 
 .quick-links__list {
 
-  .custom-hover {
+  li {
     background-color: inherit;
 
     &:hover,
     &:active,
-    *:focus {
+    &:focus {
+      background-color: var(--col3);
 
       svg path {
         stroke: var(--col5);
@@ -84,15 +85,24 @@
         display: none;
       }
 
-      &::before {
-        background-color: var(--col3);
-        left: 0;
-        top: -8px;
-        bottom: 0;
-        right: 0;
-        box-shadow: none;
-      }
     }
+  }
+
+}
+
+@media (max-width: 1500px) {
+  .quick-links__list {
+    flex-wrap: wrap;
+
+    li {
+      width: 50%;
+    }
+    a {
+      font-size: 16px;
+    }
+     a::after {
+      display: none;
+     }
 
   }
 }
