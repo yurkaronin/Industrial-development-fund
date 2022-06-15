@@ -24,15 +24,15 @@
 }
 
 .custom-hover:hover,
-  .custom-hover:focus,
-  .custom-hover:active {
+.custom-hover:focus,
+.custom-hover:active {
 
-    &::before {
-      // width: calc(100%);
-      left: -9px;
-      top: -9px;
-      bottom: -9px;
-      right: -9px;
-      box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.25);
-    }
+  &::before {
+    // width: calc(100%);
+    left: -9px;
+    top: -9px;
+    bottom: -9px;
+    right: -9px;
+    box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.25);
   }
+}
