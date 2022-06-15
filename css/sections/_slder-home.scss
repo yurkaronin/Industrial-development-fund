@@ -31,6 +31,7 @@
     z-index: 2;
     top: 0;
     left: 0;
+    transition: 0.3s;
   }
 }
 
@@ -100,5 +101,8 @@
    max-height:1000px;
     overflow: hidden;
     bottom: 0;
+  }
+  &::after {
+    opacity: 0;
   }
 }
