@@ -113,3 +113,11 @@
   background-color: var(--col4);
   color: var(--col2);
 }
+
+.slider--partners {
+  padding-bottom: 0;
+
+  .slider__content {
+    padding-bottom: 55px;
+  }
+}
