@@ -1,0 +1,50 @@
+.data-list {
+  display: flex;
+  gap: 20px 32px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  li {
+    width: calc(50% - 16px);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--col3);
+
+    span {
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 1;
+      color: var(--col5);
+      display: block;
+      margin-top: 8px;
+      text-transform: initial;
+    }
+  }
+
+  .button {
+    background-color: var(--col4);
+    color: var(--col2);
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    box-sizing: border-box;
+    text-transform: initial;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--col3);
+      color: var(--col2);
+    }
+  }
+}
