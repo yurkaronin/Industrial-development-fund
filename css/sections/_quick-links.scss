@@ -1,5 +1,7 @@
 .quick-links {
   background-color: var(--col4);
+  position: relative;
+  z-index: 11;
 
   .wrapper {
     max-width: calc(1760px + 40px + 40px);
@@ -40,6 +42,7 @@
     span {
       max-width: 300px;
     }
+
     svg {
       transition: 0.3s;
     }
@@ -55,6 +58,8 @@
     }
   }
 
+
+
   li:last-of-type {
     a:after {
       display: none;
@@ -62,15 +67,32 @@
   }
 }
 
-.quick-links__list a {
+.quick-links__list {
 
-  &:hover,
-  &:active,
-  *:focus {
-    background-color: var(--col3);
+  .custom-hover {
+    background-color: inherit;
 
-    svg path {
-      stroke: var(--col5);
+    &:hover,
+    &:active,
+    *:focus {
+
+      svg path {
+        stroke: var(--col5);
+      }
+
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        background-color: var(--col3);
+        left: 0;
+        top: -8px;
+        bottom: 0;
+        right: 0;
+        box-shadow: none;
+      }
     }
+
   }
 }
