@@ -1,0 +1,41 @@
+.demo-data {
+  &__label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #25272D;
+    opacity: 0.6;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+
+    li {
+      width: calc(50% - 8px);
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 1.2;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #1E2A5A;
+
+      span {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1;
+        color: var(--col5);
+        display: block;
+        margin-top: 8px;
+        text-transform: initial;
+      }
+    }
+  }
+}
