@@ -1,6 +1,7 @@
-.slder-home {}
+.slder-home {
+  position: relative;
+}
 
-.slder-home__content {}
 
 .slder-home__item {
   position: relative;
@@ -63,6 +64,7 @@
     width: 100%;
     margin-bottom: 13px;
     transition: 0.3s;
+    opacity: 1;
   }
 
   p {
