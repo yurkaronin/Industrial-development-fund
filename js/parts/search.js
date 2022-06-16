@@ -1,8 +1,11 @@
-searchButton.onclick = function () {
-  if (document.body.classList.contains('js-search-active')) {
-    document.body.classList.remove('js-search-active');
-  } else {
-    document.body.classList.add('js-search-active');
+
+for (let searchButtonItem of searchButton) {
+  searchButtonItem.onclick = function () {
+    if (document.body.classList.contains('js-search-active')) {
+      document.body.classList.remove('js-search-active');
+    } else {
+      document.body.classList.add('js-search-active');
+    }
   }
 }
 

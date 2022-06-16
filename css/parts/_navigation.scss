@@ -2,6 +2,31 @@
   z-index: 111;
 }
 
+.navigation__flex {
+  display: flex;
+  gap: 34px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation__logo {
+  max-width: 46px;
+  display: none;
+  img {
+    display: block;
+  }
+}
+
+.navigation__search {
+  display: none;
+
+  .button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+  }
+}
+
 .navigation__list {
   list-style: none;
   padding: 0;
@@ -12,6 +37,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  flex-grow: 2;
 }
 
 .navigation__link {
