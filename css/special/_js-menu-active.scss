@@ -1,5 +1,6 @@
 .js-menu-active {
-  // стили для кнопки показа меню
+    overflow: hidden;
+
   .button--nav {
     span {
       background-color: transparent;
@@ -18,6 +19,19 @@
       }
     }
 
+  }
+
+  .header {
+    &::after {
+      content: '';
+      display: block;
+      background-color: var(--col6);
+      width: calc( 100% - 80px);
+      position: absolute;
+      bottom: 0;
+      left: 40px;
+      height: 1px;
+    }
   }
 
   .header__navigation {
