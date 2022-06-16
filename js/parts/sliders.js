@@ -58,6 +58,7 @@ const swiper4 = new Swiper(".mySwiper4", {
  const swiper5 = new Swiper(".mySwiper5", {
   navigation: {
      nextEl: ".js-slider-promo .js-slider-next",
+     prevEl: ".js-slider-promo .js-slider-prew",
    },
    pagination: {
     el: ".js-slider-promo .swiper-pagination",

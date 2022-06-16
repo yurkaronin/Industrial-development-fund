@@ -1,7 +1,7 @@
 .results {
   background-color: var(--col10);
   color: var(--col3);
-  padding:110px 0;
+  padding: 110px 0;
   padding-top: 0;
   position: relative;
 
@@ -49,6 +49,7 @@
   .results {
     padding-bottom: 80px;
   }
+
   .results__list {
     flex-wrap: wrap;
     margin-top: 40px;
@@ -64,4 +65,14 @@
     font-size: 104px;
     margin-bottom: 25px;
   }
+}
+
+@media (max-width: 650px) {
+  .results__list li {
+    width: 100%;
+  }
+  .results__list li span {
+    font-size: 80px;
+    margin-bottom: 6px;
+}
 }

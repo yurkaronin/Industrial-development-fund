@@ -275,12 +275,37 @@
     flex-wrap: wrap;
   }
 
-  .slider__navigation {
-    max-width: 100%;
+  .slider__title {
     width: 100%;
+    max-width: 55%;
+  }
+
+  .slider__navigation {
+    justify-content: flex-end;
+    flex-grow: 2;
+    width: auto;
+    max-width: initial;
 
     .slider__btn {
       margin-right: auto;
+
+    }
+  }
+
+  .slider--stories .slider__item,
+  .slider--news .slider__item,
+  .slider--partners .slider__item {
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+
+  .slider__item img {
+    width: 100%;
+  }
+
+  .slider--partners {
+    .slider__item img {
+      width: initial;
     }
   }
 }
