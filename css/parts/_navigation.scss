@@ -225,6 +225,10 @@
       }
     }
   }
+
+  .navigation__flex {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 425px) {
