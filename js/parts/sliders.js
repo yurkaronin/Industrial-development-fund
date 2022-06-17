@@ -21,6 +21,7 @@ const swiper2 = new Swiper(".mySwiper2", {
     el: ".mySwiper2 .swiper-pagination",
     clickable: true,
   },
+  autoHeight: true,
   centeredSlides: true,
   loop: true,
   autoplay: true,

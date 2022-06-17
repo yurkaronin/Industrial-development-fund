@@ -12,6 +12,7 @@
 .navigation__logo {
   max-width: 46px;
   display: none;
+
   img {
     display: block;
   }
@@ -116,6 +117,7 @@
     max-width: 100%;
     padding: 28px 16px;
     padding-left: calc(24px + 32px + 16px);
+    color: var(--col4);
 
     hr {
       width: calc(100% - (24px + 32px + 16px));
@@ -224,10 +226,29 @@
         color: var(--col3);
       }
     }
+
+    .navigation__link {
+
+      svg {
+        width: 27px;
+      }
+
+      span {
+        width: calc(100% - 27px - 20px);
+      }
+    }
+
+    .navigation__link--cabinet {
+      svg {
+        padding-left: 10px;
+      }
+    }
+
   }
 
   .navigation__flex {
     flex-direction: column;
+    gap: 0;
   }
 }
 

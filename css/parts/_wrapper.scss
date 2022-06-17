@@ -6,7 +6,13 @@
 
 @media (max-width: 650px) {
   .wrapper {
-    max-width: calc(650px + 20px + 20px);
+    max-width: 100%;
     padding: 0 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  .wrapper {
+    padding: 0 10px;
   }
 }
