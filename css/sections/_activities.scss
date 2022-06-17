@@ -28,15 +28,10 @@ hr {
     background-color: var(--col2);
     color: var(--col3);
     display: flex;
-    gap: 24px;
-    align-items: flex-start;
+    gap: 30px;
+    align-items: center;
     transition: 0.3s;
     position: relative;
-
-    svg {
-      max-width: 50px;
-      width: 100%;
-    }
 
     span {
       width: calc(100% - 45px);
@@ -52,6 +47,13 @@ hr {
     &:active {
       color: var(--col4);
     }
+  }
+
+  .activities__icon {
+    max-width: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -78,6 +80,21 @@ hr {
     gap: 10px;
     a {
       width: 100%;
+      align-items: center;
     }
+  }
+}
+
+@media (max-width: 425px) {
+  .activities {
+    padding-top: 35px;
+    padding-bottom: 65px;
+  }
+}
+
+@media (max-width: 360px) {
+  .activities__list a {
+    gap: 16px;
+    padding: 25px 15px;
   }
 }

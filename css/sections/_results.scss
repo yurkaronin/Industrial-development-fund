@@ -68,11 +68,39 @@
 }
 
 @media (max-width: 650px) {
+  .results {
+    background-image: url(../img/bg/texture-1-mob.svg);
+  }
+
   .results__list li {
     width: 100%;
   }
+
   .results__list li span {
     font-size: 80px;
     margin-bottom: 6px;
+  }
 }
+
+@media (max-width: 425px) {
+  .results {
+    padding-bottom: 47px;
+  }
+
+  .results hr {
+    margin: 0;
+
+  }
+
+  .results__list {
+    margin-top: 12px;
+    gap: 20px;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .results__list li span {
+    font-size: 65px;
+  }
 }

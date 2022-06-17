@@ -301,7 +301,7 @@
   }
 
   .slder-home .button--custom-next {
-    right: 7%;
+    right: 4%;
     width: 40px;
     height: 40px;
     bottom: 13px;
@@ -312,7 +312,7 @@
   }
 
   .slder-home .button--custom-prev {
-    left: 7%;
+    left: 4%;
     width: 40px;
     height: 40px;
     bottom: 13px;
@@ -324,30 +324,65 @@
 
 }
 
-@media (max-width: 360px) {
+@media (max-width: 425px) {
 
   .slder-home {
+    .swiper-wrapper {
+      height: auto !important;
+    }
+
+    &__item {
+      height: auto;
+      min-height: auto;
+    }
+
+    .data-list {
+      gap: 11px 25px;
+    }
 
     .data-list li {
-      font-size: 10px;
+      font-size: 12px;
 
       span {
-        font-size: 42px;
+        font-size: 48px;
+        margin-top: 2px;
       }
 
       .button {
-        font-size: 11px;
+        font-size: 16px;
+        min-height: 56px;
       }
     }
 
-    &__details h3 {
-      font-size: 24px;
+    &__details {
+      padding: 10px 19px 35px;
+
+      p {
+        font-size: 14px;
+        margin-bottom: 16px;
+      }
+
+      h3 {
+        font-size: 24px;
+      }
     }
 
     &__item img {
-      max-height: 360px;
+      max-height: 240px;
     }
 
+  }
+
+  .slder-home .slder-home__content {
+    padding-bottom: 13px;
+  }
+
+  .slder-home .slder-home__details {
+    padding-bottom: 50px;
+  }
+
+  .slder-home .sticky-section  .button {
+    min-height: 80px;
   }
 
 }

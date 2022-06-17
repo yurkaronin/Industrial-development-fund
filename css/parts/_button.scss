@@ -90,6 +90,12 @@
 
 }
 
+@media (max-width: 650px) {
+  .button {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 425px) {
   .button {
     height: 40px;
@@ -152,7 +158,7 @@
 
 
 
- /*  &:hover,
+  /*  &:hover,
   &:focus,
   &:active {
     svg path {
@@ -162,5 +168,3 @@
 
   } */
 }
-
-

@@ -267,3 +267,33 @@
   }
 
 }
+
+@media (max-width: 650px) {
+  .slider-promo__navigation .button--custom {
+    top: 14%;
+  }
+  .slider-promo__navigation .swiper-pagination {
+    bottom: auto;
+    top: 35%;
+  }
+  .slider-promo .slider-promo__details {
+    padding-bottom: 45px;
+    padding-top: 30px;
+  }
+  .slider-promo__mini {
+    margin-bottom: 15px;
+  }
+  .slider-promo__item .title {
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .slider-promo__item hr {
+    margin-bottom: 18px;
+  }
+
+  .slider-promo__date {
+    margin: 0;
+    margin-top: 20px;
+  }
+}
