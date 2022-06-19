@@ -64,11 +64,13 @@
 @media (max-width: 768px) {
   .header {
     padding-top: 20px;
+    padding-bottom: 30px;
     background-color: #fff;
-    padding-bottom: 20px;
     z-index: 11;
-  }
+}
+}
 
+@media (max-width: 750px) {
   .header__buttons {
     flex-basis: content;
   }

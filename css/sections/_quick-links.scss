@@ -52,7 +52,8 @@
       display: block;
       width: 1px;
       height: 30%;
-      background-color: var(--col8);
+      background-color: var(--col2);
+      opacity: 0.2;
       position: absolute;
       right: 0;
     }
@@ -125,7 +126,8 @@
         display: block;
         width: 90%;
         height: 1px;
-        background-color: var(--col8);
+        background-color: var(--col2);
+        opacity: 0.2;
         position: absolute;
         left: 5%;
         bottom: 0;
