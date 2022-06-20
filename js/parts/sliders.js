@@ -4,17 +4,18 @@ const swiper = new Swiper(".mySwiper", {
     prevEl: ".js-slider-prev",
   },
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   grabCursor: true,
   autoHeight: true,
 
   centeredSlides: true,
   breakpoints: {
-    // when window width is >= 750px
+    // when window width is >= 425px
     425: {
       slidesPerView: 1,
       spaceBetween: 32,
     },
+    // when window width is >= 768px
     768: {
       slidesPerView: "auto",
       spaceBetween: 32,
@@ -36,7 +37,7 @@ const swiper2 = new Swiper(".mySwiper2", {
   autoHeight: true,
   centeredSlides: true,
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   grabCursor: true,
   slidesPerView: "auto",
   centeredSlides: true,
@@ -48,7 +49,7 @@ const swiper3 = new Swiper(".mySwiper3", {
     prevEl: ".js-slider-stories .js-slider-prev",
   },
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   grabCursor: true,
   slidesPerView: "auto",
   spaceBetween: 32,
@@ -61,7 +62,7 @@ const swiper4 = new Swiper(".mySwiper4", {
     prevEl: ".js-slider-news .js-slider-prev",
   },
   loop: true,
-  //  autoplay: true,
+   autoplay: true,
   grabCursor: true,
   autoHeight: true,
   slidesPerView: "auto",
@@ -79,7 +80,7 @@ const swiper5 = new Swiper(".mySwiper5", {
     type: "fraction",
   },
   loop: true,
-  //  autoplay: true,
+   autoplay: true,
   grabCursor: true,
   autoHeight: true,
   slidesPerView: "auto",
