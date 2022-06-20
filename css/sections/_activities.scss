@@ -70,8 +70,19 @@ hr {
 }
 
 @media (max-width: 768px) {
+  .activities {
+    padding-top: 63px;
+
+    .title {
+      margin-bottom: 24px;
+    }
+  }
   .activities__list a {
     padding: 38px 20px;
+  }
+
+  .activities__list a span {
+    line-height: 1;
   }
 }
 
