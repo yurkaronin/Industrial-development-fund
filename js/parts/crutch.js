@@ -1,7 +1,7 @@
-window.onresize = function(event) {
+/* window.onresize = function(event) {
   console.log('WOW!');
   location.reload ();
-};
+}; */
 
 window.addEventListener("mousewheel", function(e) {
   if (e.ctrlKey) {
@@ -10,3 +10,7 @@ window.addEventListener("mousewheel", function(e) {
     document.body.style.zoom = 1.0;
   }
 });
+
+if(window.devicePixelRatio < 1) {
+  console.log('change!');
+}
