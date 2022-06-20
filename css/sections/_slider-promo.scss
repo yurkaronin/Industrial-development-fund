@@ -96,7 +96,7 @@
     .button--custom {
       position: absolute;
       right: 5%;
-      top: 32%;
+      top: calc(50% - 40px);
       pointer-events: initial;
       background-color: transparent;
       width: 80px;

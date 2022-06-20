@@ -1,15 +1,12 @@
 .breadcrumbs {
-  overflow: auto;
+
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 24px;
-
-    overflow-x: auto;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
+    flex-wrap: wrap;
+    gap: 10px 24px;
     width: 100%;
   }
 
@@ -45,10 +42,6 @@
       &::after {
         display: none;
       }
-
-      /* a {
-        opacity: 0.7;
-      } */
     }
   }
 

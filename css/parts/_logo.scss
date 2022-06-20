@@ -7,18 +7,6 @@
   color: var(--col3);
 
   p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 15px;
-    text-transform: uppercase;
-  }
-
-  img {
-    display: block;
-    max-width: 72px;
-  }
-
-  figcaption {
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -30,6 +18,11 @@
       font-weight: 700;
     }
   }
+
+  img {
+    display: block;
+    max-width: 72px;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -37,14 +30,14 @@
     max-width: 54px;
   }
 
-  .logo figcaption {
+  .logo p {
     max-width: 360px;
     font-size: 18px;
   }
 }
 
 @media (max-width: 900px) {
-  .logo figcaption {
+  .logo p {
     max-width: 200px;
     font-size: 14px;
   }
@@ -59,7 +52,7 @@
     max-width: 45px;
   }
 
-  .logo figcaption {
+  .logo p {
     max-width: 150px;
     font-size: 12px;
   }

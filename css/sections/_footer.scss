@@ -60,8 +60,7 @@
     align-items: center;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1;
-    letter-spacing: 0.03em;
+    line-height: 1.2;
     text-transform: uppercase;
 
     &::before {
@@ -182,12 +181,13 @@
 
     ul {
       display: flex;
-      gap: 16px;
+      gap: 22px;
       flex-wrap: wrap;
     }
 
     li {
-      width: calc(50% - 8px);
+      width: calc(50% - 11px);
+      margin: 0;
     }
   }
 

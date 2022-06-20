@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 
   *,
   *::before,
@@ -19,6 +20,7 @@ body {
   font-size: 18px;
   line-height: 1.4;
   color: var(--col1);
+  position: relative;
 }
 
 img {

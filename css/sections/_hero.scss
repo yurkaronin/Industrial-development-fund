@@ -28,8 +28,6 @@
     z-index: 2;
   }
 
-  .hero__title {}
-
   .hero__border {
     background: #FFFFFF;
     opacity: 0.2;
@@ -44,4 +42,19 @@
   .hero {
     padding: 60px 0 80px;
   }
+}
+
+@media (max-width: 425px) {
+  .hero__breadcrumbs {
+    display: none;
+  }
+  .hero__border {
+    display: none;
+  }
+  .hero__title {
+    margin: 0;
+  }
+  .hero {
+    padding: 60px 0;
+}
 }
