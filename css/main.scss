@@ -24,7 +24,7 @@
 @import "parts/data-list";
 @import "parts/sticky-section";
 @import "parts/move-up";
-
+@import "parts/progress-circle";
 
 // sections
 @import "sections/header";
@@ -41,8 +41,9 @@
 
 @import "sections/footer";
 
-
 // special
 @import "special/js-menu-active";
 @import "special/js-search-active";
 @import "special/js-menu-fixed";
+
+

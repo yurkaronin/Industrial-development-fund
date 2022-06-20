@@ -1,0 +1,28 @@
+.progress-circle {
+
+  &__indicator,
+  &__bg {
+    stroke: var(--col5);
+    stroke-width: 2px;
+    fill: none;
+    transform-origin: center;
+    transform: rotate(-180deg);
+  }
+
+  &__bg {
+    stroke: var(--col12);
+  }
+
+  &__indicator {
+    // парамеры длинна пунктира, длинна отступа
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: stroke 3s;
+  }
+}
+
+@keyframes stroke {
+  to {
+    stroke-dashoffset: 100;
+  }
+}
