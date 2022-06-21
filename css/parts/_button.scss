@@ -126,10 +126,12 @@
 
   span {
     position: absolute;
-    left: -72px;
+    left: -65px;
     font-weight: 400;
     font-size: 13px;
     line-height: 1;
+    padding: 3px;
+    background-color: rgb(34, 33, 33);
   }
 
   .button__arrow {
@@ -156,12 +158,12 @@
 
   .progressbar  path {
     stroke: var(--col5) !important;
-    stroke-dasharray: 100% 0;
-    // stroke-dashoffset: 100%;
+    stroke-dasharray: 226px;
+    stroke-dashoffset: 226px;
     stroke-width: 2px;
+    fill: none;
 
-    // stroke-dashoffset: 200px;
-    animation: custom-progress 6s ease forwards;
+    animation: custom-progress 1s ease forwards;
   }
 
   @keyframes custom-progress {
@@ -169,16 +171,4 @@
       stroke-dashoffset: 0;
     }
   }
-
-
-
-  /*  &:hover,
-  &:focus,
-  &:active {
-    svg path {
-      stroke: transparent;
-      fill: var(--col5);
-    }
-
-  } */
 }

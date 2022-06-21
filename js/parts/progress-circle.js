@@ -1,4 +1,4 @@
-/* const progressCircle = document.querySelectorAll('.progress-circle');
+const progressCircle = document.querySelectorAll('.progress-circle');
 
 for(let progressCircleItem of progressCircle) {
 
@@ -21,12 +21,10 @@ const indicator = progressCircleItem.querySelector('.progress-circle__indicator'
   }
 }
 
-setProgress(0); */
+setProgress(0);
 
 // как получить значение радиуса окружности
 // radius = (width / 2) - (strokeWidth * 2);
 // 80 / 2 - 4 = 36
 
 // длинна  окружности
-
-document.querySelector('.progressbar').getTotalLength;
