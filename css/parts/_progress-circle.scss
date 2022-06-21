@@ -1,4 +1,9 @@
 .progress-circle {
+  width: 77px;
+  height: 80px;
+  pointer-events: none;
+  position: relative;
+  overflow: hidden;
 
   &__indicator,
   &__bg {
@@ -14,15 +19,43 @@
   }
 
   &__indicator {
-    // парамеры длинна пунктира, длинна отступа
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: stroke 6s;
+    stroke-dasharray: 226px;
+    stroke-dashoffset: 226px;
+    stroke-width: 2px;
+    fill: none;
+    stroke: var(--col5) !important;
+  }
+
+
+}
+
+.progress-circle--prev {
+
+  .progress-circle__indicator,
+  .progress-circle__bg {
+    transform: none;
+  }
+
+}
+
+.button--custom-prev {
+  .button__arrow {
+    right: 15px ;
+  }
+
+  span {
+    right: -85px !important;
+  }
+}
+
+.active {
+  .progress-circle__indicator {
+    animation: stroke 5s ease forwards;
   }
 }
 
 @keyframes stroke {
   to {
-    stroke-dashoffset: 100;
+    stroke-dashoffset: 0;
   }
 }

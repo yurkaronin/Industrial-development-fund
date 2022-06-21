@@ -24,7 +24,7 @@ const swiper = new Swiper(".mySwiper", {
   }
 });
 
-
+// Слайдер на главной странице (первый экран)
 const swiper2 = new Swiper(".mySwiper2", {
   navigation: {
     nextEl: ".mySwiper2 .js-slider-next",
@@ -41,6 +41,24 @@ const swiper2 = new Swiper(".mySwiper2", {
   grabCursor: true,
   slidesPerView: "auto",
   centeredSlides: true,
+});
+
+
+swiper2.on('slideChange', function () {
+  let btnNext = document.querySelector('.mySwiper2 .button--custom-next');
+  let btnPrev = document.querySelector('.mySwiper2 .button--custom-prev');
+
+  btnNext.classList.remove('active');
+  btnPrev.classList.remove('active');
+  if (window.__slideChangeTimeout)
+    clearTimeout(window.__slideChangeTimeout);
+
+    window.__slideChangeTimeout = setTimeout((btnNext)=>{
+      btnNext.classList.add('active');
+      btnPrev.classList.add('active');
+
+    }, 100, btnNext);
+
 });
 
 const swiper3 = new Swiper(".mySwiper3", {

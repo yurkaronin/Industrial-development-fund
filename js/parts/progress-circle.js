@@ -1,27 +1,27 @@
-const progressCircle = document.querySelectorAll('.progress-circle');
+// const progressCircle = document.querySelectorAll('.progress-circle');
 
-for(let progressCircleItem of progressCircle) {
+// for(let progressCircleItem of progressCircle) {
 
-const indicator = progressCircleItem.querySelector('.progress-circle__indicator');
-// радиус
-  let radius = indicator.r.baseVal.value;
-  console.log(radius);
-  // длинна окружности
-  let circleLength = 2 * Math.PI * radius;
-  console.log(circleLength);
+// const indicator = progressCircleItem.querySelector('.progress-circle__indicator');
+// // радиус
+//   let radius = indicator.r.baseVal.value;
+//   console.log(radius);
+//   // длинна окружности
+//   let circleLength = 2 * Math.PI * radius;
+//   console.log(circleLength);
 
-  let offSet = 100;
+//   let offSet = 100;
 
-  indicator.style.strokeDasharray = `${circleLength} ${circleLength}`;
-  indicator.style.strokeDashoffset = circleLength;
+//   indicator.style.strokeDasharray = `${circleLength} ${circleLength}`;
+//   indicator.style.strokeDashoffset = circleLength;
 
-  function setProgress(percent) {
-    let offSet = circleLength - percent / 100 * circleLength;
-    indicator.style.strokeDashoffset = offSet;
-  }
-}
+//   function setProgress(percent) {
+//     let offSet = circleLength - percent / 100 * circleLength;
+//     indicator.style.strokeDashoffset = offSet;
+//   }
+// }
 
-setProgress(0);
+// setProgress(0);
 
 // как получить значение радиуса окружности
 // radius = (width / 2) - (strokeWidth * 2);
