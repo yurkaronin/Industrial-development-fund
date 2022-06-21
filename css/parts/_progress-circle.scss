@@ -59,3 +59,10 @@
     stroke-dashoffset: 0;
   }
 }
+
+
+@media (max-width: 650px) {
+  .progress-circle {
+    display: none;
+  }
+}
