@@ -88,6 +88,8 @@ const swiper4 = new Swiper(".mySwiper4", {
   centeredSlides: true,
 });
 
+
+// синий слайдер
 const swiper5 = new Swiper(".mySwiper5", {
   navigation: {
     nextEl: ".js-slider-promo .js-slider-next",
@@ -104,4 +106,21 @@ const swiper5 = new Swiper(".mySwiper5", {
   slidesPerView: "auto",
   spaceBetween: 32,
   centeredSlides: true,
+});
+
+swiper5.on('slideChange', function () {
+  let btnNext = document.querySelector('.mySwiper5 .button--custom-next');
+  // let btnPrev = document.querySelector('.mySwiper5 .button--custom-prev');
+
+  btnNext.classList.remove('active');
+  // btnPrev.classList.remove('active');
+  if (window.__slideChangeTimeout)
+    clearTimeout(window.__slideChangeTimeout);
+
+    window.__slideChangeTimeout = setTimeout((btnNext)=>{
+      btnNext.classList.add('active');
+      // btnPrev.classList.add('active');
+
+    }, 100, btnNext);
+
 });
