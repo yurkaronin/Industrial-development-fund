@@ -147,3 +147,13 @@
     }
   }
 }
+
+.button--custom-prev {
+  &:hover,
+  &:focus {
+    .progress-circle__indicator {
+      stroke: var(--col5) !important;
+      stroke-dashoffset: 0;
+    }
+  }
+}

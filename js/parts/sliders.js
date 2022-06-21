@@ -43,21 +43,17 @@ const swiper2 = new Swiper(".mySwiper2", {
   centeredSlides: true,
 });
 
-
 swiper2.on('slideChange', function () {
   let btnNext = document.querySelector('.mySwiper2 .button--custom-next');
-  let btnPrev = document.querySelector('.mySwiper2 .button--custom-prev');
 
   btnNext.classList.remove('active');
-  btnPrev.classList.remove('active');
-  if (window.__slideChangeTimeout)
-    clearTimeout(window.__slideChangeTimeout);
+  if (this.__slideChangeTimeout)
+    clearTimeout(this.__slideChangeTimeout);
 
-    window.__slideChangeTimeout = setTimeout((btnNext)=>{
-      btnNext.classList.add('active');
-      btnPrev.classList.add('active');
+  this.__slideChangeTimeout = setTimeout((btnNext) => {
+    btnNext.classList.add('active');
 
-    }, 100, btnNext);
+  }, 100, btnNext);
 
 });
 
@@ -80,7 +76,7 @@ const swiper4 = new Swiper(".mySwiper4", {
     prevEl: ".js-slider-news .js-slider-prev",
   },
   loop: true,
-   autoplay: true,
+  autoplay: true,
   grabCursor: true,
   autoHeight: true,
   slidesPerView: "auto",
@@ -100,7 +96,7 @@ const swiper5 = new Swiper(".mySwiper5", {
     type: "fraction",
   },
   loop: true,
-   autoplay: true,
+  autoplay: true,
   grabCursor: true,
   autoHeight: true,
   slidesPerView: "auto",
@@ -110,17 +106,14 @@ const swiper5 = new Swiper(".mySwiper5", {
 
 swiper5.on('slideChange', function () {
   let btnNext = document.querySelector('.mySwiper5 .button--custom-next');
-  // let btnPrev = document.querySelector('.mySwiper5 .button--custom-prev');
 
   btnNext.classList.remove('active');
-  // btnPrev.classList.remove('active');
-  if (window.__slideChangeTimeout)
-    clearTimeout(window.__slideChangeTimeout);
+  if (this.__slideChangeTimeout2)
+    clearTimeout(this.__slideChangeTimeout2);
 
-    window.__slideChangeTimeout = setTimeout((btnNext)=>{
-      btnNext.classList.add('active');
-      // btnPrev.classList.add('active');
+  this.__slideChangeTimeout2 = setTimeout((btnNext) => {
+    btnNext.classList.add('active');
 
-    }, 100, btnNext);
+  }, 100, btnNext);
 
 });
