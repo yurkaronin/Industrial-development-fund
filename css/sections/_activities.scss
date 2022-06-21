@@ -43,8 +43,7 @@ hr {
     }
 
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       color: var(--col4);
     }
   }

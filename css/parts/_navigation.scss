@@ -160,8 +160,7 @@
   }
 
   .navigation__link:hover,
-  .navigation__link:focus,
-  .navigation__link:active {
+  .navigation__link:focus {
     background-color: transparent;
     color: var(--col2);
 
@@ -189,8 +188,7 @@
   }
 
   .navigation__link:hover,
-  .navigation__link:focus,
-  .navigation__link:active {
+  .navigation__link:focus {
 
     &:after {
       width: calc(100% + 24px + 24px);
@@ -220,8 +218,7 @@
       }
 
       &:hover,
-      &:focus,
-      &:active {
+      &:focus {
         background-color: var(--col7);
         color: var(--col3);
       }
@@ -272,8 +269,7 @@
   }
 
   .navigation__link:hover,
-  .navigation__link:focus,
-  .navigation__link:active {
+  .navigation__link:focus {
 
     &:after {
       width: calc(100% + 20px + 20px);

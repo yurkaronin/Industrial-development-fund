@@ -120,8 +120,7 @@
       }
 
       &:hover,
-      &:focus,
-      &:active {
+      &:focus {
         svg path {
           stroke: transparent;
           fill: #ffffff;
@@ -191,8 +190,7 @@
 
   .slider--stories .swiper-slide-active::before,
   .custom-hover:hover::before,
-  .custom-hover:focus::before,
-  .custom-hover:active::before {
+  .custom-hover:focus::before {
     display: none;
   }
 

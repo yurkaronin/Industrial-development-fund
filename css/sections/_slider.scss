@@ -37,8 +37,7 @@
     }
 
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       svg path {
         stroke: transparent;
         fill: var(--col2);
@@ -140,7 +139,6 @@
   .swiper-slide {
 
     &:hover,
-    &:active,
     &:focus {
       z-index: 2;
 
@@ -191,8 +189,7 @@
     width: 100%;
 
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       z-index: 2;
 
       &::before {
@@ -256,8 +253,7 @@
     }
 
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
 
       &::before {
         left: -24px;
