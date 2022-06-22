@@ -237,12 +237,6 @@
     }
   }
 
- /*  .slder-home .swiper-wrapper {
-    height: 100% !important;
-    min-height: 900px !important;
-  } */
-
-
 }
 
 @media (max-width: 650px) {
@@ -354,6 +348,10 @@
     }
   }
 
+  .slder-home .button--custom-next .button__arrow {
+    right: 0;
+  }
+
 }
 
 @media (max-width: 425px) {
@@ -417,4 +415,10 @@
     min-height: 80px;
   }
 
+}
+
+@media (max-width: 360px) {
+  .slder-home .data-list li .button {
+    font-size: 12px;
+  }
 }

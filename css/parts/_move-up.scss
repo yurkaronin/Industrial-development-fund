@@ -1,12 +1,12 @@
 .move-up {
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  // bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 11;
-
+  opacity: 0;
 
   &__link {
     svg {

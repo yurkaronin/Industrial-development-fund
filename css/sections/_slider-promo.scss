@@ -255,6 +255,10 @@
     &__navigation .wrapper {
       padding: 0;
     }
+
+    .button--custom .button__arrow {
+      right: 0;
+    }
   }
 
   &__navigation .button--custom {
