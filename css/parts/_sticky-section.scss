@@ -54,10 +54,33 @@
   }
 
   .sticky-section .button {
-    height: 71px;
+    height: 70px;
     width: 100%;
     text-align: center;
-    background-color: var(--col4);
-    color: var(--col2);
+    position: relative;
+    padding: 28px 48px !important;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #DDDFE6;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.3s;
+
+    }
+
+
   }
+
+}
+
+.sticky-section .button:hover::before,
+.sticky-section .button:focus::before,
+.sticky-section .button:active::before {
+  background-color: var(--col4);
+
 }

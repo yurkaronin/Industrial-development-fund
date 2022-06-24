@@ -5,7 +5,7 @@ window.onscroll = function() {
       document.body.classList.remove('js-menu-fixed');
     }
 
-    if (window.pageYOffset > 400) {
+    if (window.pageYOffset > 400 && window.screen.width >= 650) {
       document.body.classList.add('js-up-button-show');
     } else {
       document.body.classList.remove('js-up-button-show');
