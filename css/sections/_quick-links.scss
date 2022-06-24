@@ -117,7 +117,7 @@
     }
 
     a {
-      // font-size: 16px;
+      font-size: 16px;
       padding: 20px 40px;
 
       &::before {
@@ -145,16 +145,6 @@
       }
     }
 
-  }
-}
-
-@media (max-width: 768px) {
-  .quick-links__list {
-    li {
-      a {
-        font-size: 16px;
-      }
-    }
   }
 }
 

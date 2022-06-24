@@ -1,5 +1,5 @@
 .page-content {
-  padding: 40px 0 40px;
+  padding: 40px 0 80px;
 
   strong,
   figure,
@@ -162,6 +162,14 @@
 
 }
 
+.big-table {
+  overflow: auto;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
 .helper {
   margin-top: 43px;
   margin-bottom: 20px;
@@ -208,16 +216,13 @@
     line-height: 1.5;
     color: inherit;
     margin: 0;
-    margin-bottom: 16px;
-    max-height: 150px;
-    overflow-y: auto;
+    margin-bottom: 40px;
   }
 
   hr {
     max-width: 32px;
     color: var(--col5);
     margin: 0;
-    opacity: 1;
   }
 }
 @media (max-width: 1200px) {
@@ -237,7 +242,7 @@
 
 }
 
-@media (max-width: 920px) {
+@media (max-width: 500px) {
   .page-content__gallery {
     li {
       width: 100%;

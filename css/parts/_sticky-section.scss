@@ -1,11 +1,11 @@
 .sticky-section {
-  position: absolute;
-  z-index: 11;
+  position: fixed;
   right: 0;
-  top: 27%;
+  top: 36%;
   transform-origin: 100% 100%;
   transform: rotate(-90deg);
   white-space: nowrap;
+  z-index: 22;
 
   .button {
     display: block;
@@ -18,7 +18,8 @@
 }
 
 @media (max-width: 650px) {
-  .sticky-section {
+
+  /* .sticky-section {
     position: initial;
     z-index: 11;
     right: 0;
@@ -42,5 +43,21 @@
     &:focus {
       color: var(--col3);
     }
+  } */
+  .sticky-section {
+    right: auto;
+    top: auto;
+    transform: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .sticky-section .button {
+    height: 71px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--col4);
+    color: var(--col2);
   }
 }

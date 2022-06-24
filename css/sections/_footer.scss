@@ -100,6 +100,7 @@
     &:hover,
     &:focus {
       color: var(--col2);
+      transition: all 0.3;
     }
   }
 }
@@ -111,6 +112,10 @@
 
   svg {
     width: 65px;
+
+    path {
+      fill: var(--col2);
+    }
   }
 
   figcaption {
@@ -118,8 +123,29 @@
   }
 
   &:hover {
-    svg path {
-      fill: var(--col5);
+    svg {
+
+      .logo1 {
+        fill: #C90187;
+      }
+      .logo2 {
+        fill: #9F3480;
+      }
+      .logo3 {
+        fill: #5FA050;
+      }
+      .logo4 {
+        fill: #69AF5C;
+      }
+      .logo5 {
+        fill: #5EA17E;
+      }
+      .logo6 {
+        fill: #69AF5C;
+      }
+      .logo7 {
+        fill: #344198;
+      }
     }
   }
 }
@@ -138,12 +164,10 @@
     object-fit: contain;
     display: block;
   }
+}
 
-  &:hover {
-    svg path {
-      fill: #DB1E35;
-    }
-  }
+.footer__logo--mod:hover svg path {
+  fill: #DB1E35 !important;
 }
 
 .footer__list {

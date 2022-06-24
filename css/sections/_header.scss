@@ -86,7 +86,7 @@
 
   .header__navigation {
     padding: 50px 0 80px;
-    height: calc(100vh - 50px - 75px);
+    height: calc(100vh - 50px - 80px);
   }
 }
 
@@ -98,7 +98,6 @@
 
   .header__navigation {
     padding: 0;
-    height: calc(100vh - 105px);
-    overflow-y: auto;
+    height: calc(100vh);
   }
 }
