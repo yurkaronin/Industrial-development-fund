@@ -19,4 +19,3 @@ include("./js/parts/big-table.js");
 include("./js/parts/sliders.js");
 include("./js/parts/crutch.js");
 include("./js/parts/ie-alert.js");
-include("./js/parts/progress-circle.js");

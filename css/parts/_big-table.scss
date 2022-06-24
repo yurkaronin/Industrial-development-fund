@@ -1,0 +1,49 @@
+.big-table {
+  overflow-x: scroll;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 20px;
+  transform: rotateX(180deg);
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 9px;
+
+  }
+
+  /* Track - область полосы - фон */
+  &::-webkit-scrollbar-track {
+    background: var(--col6);
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: var(--color3);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--col8);
+  }
+
+  /* Handle on hover - сам элемент скрола при наведении на него */
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--col8);
+  }
+
+
+  table {
+    transform: rotateX(180deg);
+    min-width: 1756px;
+    width: 100%
+
+
+  }
+
+
+
+}

@@ -1,7 +1,6 @@
-/* window.onresize = function(event) {
-  console.log('WOW!');
+window.onresize = function(event) {
   location.reload ();
-}; */
+};
 
 window.addEventListener("mousewheel", function(e) {
   if (e.ctrlKey) {

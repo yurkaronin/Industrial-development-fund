@@ -177,6 +177,17 @@
   display: none;
 }
 
+.slider-promo__navigation {
+
+  .swiper-pagination {
+    right: 40px;
+  }
+
+  .button--custom {
+    right: 27px;
+  }
+}
+
 @media (max-width: 1200px) {
 
   .slider-promo__item .title {
@@ -351,6 +362,21 @@
 
   .slider-promo__navigation .swiper-pagination {
     top: 50%;
+  }
+
+  .slider-promo__navigation {
+
+    .swiper-pagination {
+      right: 20px;
+    }
+
+    .button--custom {
+      right: 20px;
+    }
+    .button--custom-prev {
+      right: auto;
+      left: 20px;
+    }
   }
 
 
